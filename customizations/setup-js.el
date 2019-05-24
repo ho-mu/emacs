@@ -15,7 +15,6 @@
 
 (setq prettier-js-args '(
       "--tab-width" "2"
-      "--no-semi" "true"
       "--single-quote" "false"))
 
 (setq js2-basic-offset 2)

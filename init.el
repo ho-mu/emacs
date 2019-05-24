@@ -150,7 +150,7 @@
  '(fci-rule-color "#2a2a2a")
  '(package-selected-packages
    (quote
-    (magit-annex projectile-trailblazer color-theme-sanityinc-tomorrow solarized-theme flymake-gdc flymake-d flycheck-color-mode-line markdown-mode typed-clojure-mode tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (clojure-snippets magit-annex projectile-trailblazer color-theme-sanityinc-tomorrow solarized-theme flymake-gdc flymake-d flycheck-color-mode-line markdown-mode typed-clojure-mode tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
