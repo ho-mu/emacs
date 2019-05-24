@@ -1,12 +1,12 @@
 ;; javascript / html
 
 
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js$'" . js2-mode))
 ;;(add-hook 'js-mode-hook 'subword-mode)
 ;;(add-hook 'html-mode-hook 'subword-mode)
 ;;(add-hook 'js2-jsx-mode-hook 'prettier-js-mode)
-;;(add-hook 'web-mode-hook 'prettier-js-mode)
-;;(add-hook 'js-mode-hook 'prettier-js-mode)
+(add-hook 'web-mode-hook 'prettier-js-mode)
+(add-hook 'js-mode-hook 'prettier-js-mode)
 
 (require 'prettier-js)
 
