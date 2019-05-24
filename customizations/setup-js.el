@@ -21,6 +21,9 @@
 (setq js2-basic-offset 2)
 (setq js-indent-level 2)
 
+(electric-pair-mode 1)
+(setq electric-pair-preserve-balance nil)
+
 (setq company-tooltip-align-annotations t)
 
 (eval-after-load "sgml-mode"
