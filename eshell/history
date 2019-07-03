@@ -1,0 +1,25 @@
+cd ..
+ls
+cd ..
+cd..
+cd ..
+cd ../..
+cd desktop/gitlab/mi-nm-bank-sync
+git checkout master
+git pull origin master
+nvm use default
+yarn test bulk-convert-products.test
+cd ..
+cd mi-treasury-postgres
+git checkout master
+git pull origin master
+cd ..
+cd mi-nm-bank-sync
+rm -rf node_modules
+npm install
+yarn test bulk-convert-products.test
+yarn test bulk-convert-products.test
+yarn test bulk-convert-products.test
+yarn test bulk-convert-products.test
+yarn test bulk-convert-products.test
+yarn test bulk-convert-products.test

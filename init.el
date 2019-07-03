@@ -22,8 +22,9 @@
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode) t)
 ;;;###autoload
- (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode) t)
-
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode) t)
+;;;###autoload
+(add-to-list 'auto-mode-alist '("\\Jenkinsfile'" . groovy-mode) t)
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -72,7 +73,8 @@
 
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/navigation.el line 23 for 
-
+    magit
+    
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -150,14 +152,18 @@
  '(custom-enabled-themes (quote (sanityinc-tomorrow-day)))
  '(custom-safe-themes
    (quote
-    ("bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+    ("cf08ae4c26cacce2eebff39d129ea0a21c9d7bf70ea9b945588c1c66392578d1" "52588047a0fe3727e3cd8a90e76d7f078c9bd62c0b246324e557dfa5112e0d0c" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(fci-rule-color "#2a2a2a")
+ '(grep-find-ignored-directories
+   (quote
+    ("SCCS" "RCS" "CVS" "MCVS" ".src" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "dist" "node_modules")))
  '(package-selected-packages
    (quote
-    (magit-filenotify json-mode idle-highlight-mode yaml-mode clojure-snippets magit-annex projectile-trailblazer color-theme-sanityinc-tomorrow solarized-theme flymake-gdc flymake-d flycheck-color-mode-line markdown-mode typed-clojure-mode tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (magit-popup git-commit magit groovy-mode helm spacemacs-theme json-mode idle-highlight-mode yaml-mode clojure-snippets projectile-trailblazer color-theme-sanityinc-tomorrow solarized-theme flymake-gdc flymake-d flycheck-color-mode-line markdown-mode typed-clojure-mode tagedit smex rainbow-delimiters projectile paredit ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'upcase-region 'disabled nil)
